@@ -22,8 +22,6 @@ Fractol is a program designed for the exploration and visualization of fascinati
 ### Prerequisites
 
 - MiniLibX installed
-	```bash
- 	 git clone git@github.com:42Paris/minilibx-linux.git
 - C compiler (CC recommended).
 
 ### Installation
@@ -36,6 +34,7 @@ Fractol is a program designed for the exploration and visualization of fascinati
 2. Compile the program:
 	```bash
  	cd fract-ol
+ 	git clone git@github.com:42Paris/minilibx-linux.git
 	make -s
 
 ### Usage
