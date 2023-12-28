@@ -29,7 +29,7 @@ Fractol is a program designed for the exploration and visualization of fascinati
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Memli-Sheremeti/fract-ol.git
+   git clone git@github.com:Memli-Sheremeti/fract-ol.git
 
 2. Compile the program:
 	```bash
