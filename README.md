@@ -21,7 +21,9 @@ Fractol is a program designed for the exploration and visualization of fascinati
 
 ### Prerequisites
 
-- MiniLibX installed (either available on school machines or installed from its sources).
+- MiniLibX installed
+	```bash
+ 	 git clone git@github.com:42Paris/minilibx-linux.git
 - C compiler (CC recommended).
 
 ### Installation
