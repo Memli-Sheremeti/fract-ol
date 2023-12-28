@@ -6,7 +6,7 @@
 #    By: mshereme <mshereme@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/28 13:07:03 by mshereme          #+#    #+#              #
-#    Updated: 2023/12/19 20:24:28 by mshereme         ###   ########.fr        #
+#    Updated: 2023/12/27 17:43:22 by mshereme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,13 +22,21 @@ CC = cc
 
 RM = rm -rf
 
-FLAGS = -Wall -Wextra -Werror -g3
+FLAGS = -Wall -Wextra -Werror
 
 LIBFTDIR = libft/
 
-MINIDIR = minilibx-linux/
+MLXDIR = minilibx-linux/
 
 SRC = src/main.c \
+      src/initialize.c \
+      src/error.c \
+      src/event.c \
+      src/julia.c \
+      src/mandelbrot.c \
+      src/other.c \
+      src/burningship.c \
+      src/color.c \
 
 OBJ = ${SRC:.c=.o}
 
@@ -41,15 +49,16 @@ MINI = -L ./minilibx-linux -lmlx -lXext -lX11
 
 ${NAME}: ${OBJ}
 	make -C ${LIBFTDIR}
-	make -C ${MINIDIR}
-	${CC} ${FLAGS} ${OBJ} -o ${NAME} ${INCLUDE} ${MINI}
+	make -C ${MLXDIR}
+	${CC} ${FLAGS} ${OBJ} -o ${NAME} -lm ${INCLUDE} ${MINI}
 	@echo "${NAME}: $(GREEN)$(NAME) was created$(RESET)"
 
 all: ${NAME}
 
 clean:
-	${RM} ${OBJ} ${NAME}
+	${RM} ${OBJ} ${OBJ_C} ${NAME} ${NAME_BONUS}
 	@cd $(LIBFTDIR) && $(MAKE) clean
+	@cd ${MLXDIR} && ${MAKE} clean
 	@echo "${NAME}: $(RED)${NAME} was deleted$(RESET)"
 
 fclean: clean

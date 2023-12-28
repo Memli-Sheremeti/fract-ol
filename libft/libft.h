@@ -6,7 +6,7 @@
 /*   By: mshereme <mshereme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:06:55 by mshereme          #+#    #+#             */
-/*   Updated: 2023/12/16 18:39:57 by mshereme         ###   ########.fr       */
+/*   Updated: 2023/12/27 15:13:16 by mshereme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ int		ft_print_num(long nb);
 int		ft_print_hex(unsigned int nb, char spe);
 int		ft_print_decimal(unsigned int nb);
 int		ft_print_sign(int c);
+
+double	ft_atof(const char *str);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

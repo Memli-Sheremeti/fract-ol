@@ -6,7 +6,7 @@
 #    By: mshereme <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/01 17:12:36 by mshereme          #+#    #+#              #
-#    Updated: 2023/12/16 18:35:26 by mshereme         ###   ########.fr        #
+#    Updated: 2023/12/27 15:02:41 by mshereme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
        ft_printf.c get_next_line.c get_next_line_utils.c ft_lstnew_bonus.c \
        ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
        ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c \
-       ft_lstiter_bonus.c ft_lstmap_bonus.c ft_free.c
+       ft_lstiter_bonus.c ft_lstmap_bonus.c ft_free.c ft_atof.c \
 
 HEAD = libft.h
 
