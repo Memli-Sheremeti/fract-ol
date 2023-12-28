@@ -33,6 +33,7 @@ Fractol is a program designed for the exploration and visualization of fascinati
 
 2. Compile the program:
 	```bash
+ 	cd fract-ol
 	make
 
 ### Usage
