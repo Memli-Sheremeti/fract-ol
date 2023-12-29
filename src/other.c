@@ -6,7 +6,7 @@
 /*   By: mshereme <mshereme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 11:00:24 by mshereme          #+#    #+#             */
-/*   Updated: 2023/12/27 18:21:05 by mshereme         ###   ########.fr       */
+/*   Updated: 2023/12/28 08:16:06 by mshereme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,6 @@ void	ft_get_init_other(t_data *img)
 	(*img).zoom = 230;
 	(*img).scale_x = -1.5;
 	(*img).scale_y = -1.5;
+	(*img).argument_cx = 0;
+	(*img).argument_cy = 0;
 }

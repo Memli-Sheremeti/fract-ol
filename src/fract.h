@@ -6,7 +6,7 @@
 /*   By: mshereme <mshereme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 11:30:18 by mshereme          #+#    #+#             */
-/*   Updated: 2023/12/27 18:27:17 by mshereme         ###   ########.fr       */
+/*   Updated: 2023/12/28 12:50:26 by mshereme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@
 #  define M_PI 3.1415926535897932384626433
 # endif
 # define ESC 0xFF1B
-# define P
-# define X
 
 enum e_SCROLL
 {
@@ -60,6 +58,7 @@ typedef struct s_data
 
 }	t_data;
 
+// void	ft_display_data(t_data img);
 /* Initialize data */
 void	ft_get_init_img(t_data *img, char **name);
 void	ft_get_init_fract(t_data *img, char **name);
@@ -74,7 +73,6 @@ int		ft_close_mlx_data(t_data *img);
 /* Draw tools */
 void	ft_draw_fractal(t_data *img);
 void	ft_pixel_put_image(t_data *data, int x, int y, int color);
-void	ft_display_data(t_data img);
 int		ft_color_base(int i);
 int		ft_color_bs(int i);
 int		ft_apply_color(t_data *img);

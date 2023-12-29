@@ -6,7 +6,7 @@
 #    By: mshereme <mshereme@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/28 13:07:03 by mshereme          #+#    #+#              #
-#    Updated: 2023/12/27 17:43:22 by mshereme         ###   ########.fr        #
+#    Updated: 2023/12/28 13:05:14 by mshereme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,6 @@ RED = \033[0;31m
 RESET = \033[0m
 
 NAME = libix
-
-NAME_BONUS = bonus
 
 CC = cc
 
@@ -56,7 +54,7 @@ ${NAME}: ${OBJ}
 all: ${NAME}
 
 clean:
-	${RM} ${OBJ} ${OBJ_C} ${NAME} ${NAME_BONUS}
+	${RM} ${OBJ} ${NAME}
 	@cd $(LIBFTDIR) && $(MAKE) clean
 	@cd ${MLXDIR} && ${MAKE} clean
 	@echo "${NAME}: $(RED)${NAME} was deleted$(RESET)"

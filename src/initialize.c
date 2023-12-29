@@ -6,31 +6,31 @@
 /*   By: mshereme <mshereme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/24 16:00:36 by mshereme          #+#    #+#             */
-/*   Updated: 2023/12/27 17:51:54 by mshereme         ###   ########.fr       */
+/*   Updated: 2023/12/28 08:18:26 by mshereme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fract.h"
 #include <stdio.h>
 
-void	ft_display_data(t_data img)
-{
-	printf("IMG.img == %p\n", img.img);
-	printf("IMG.bpp == %d\n", img.bpp);
-	printf("IMG.sl == %d\n", img.sl);
-	printf("IMG.endian == %d\n", img.endian);
-	printf("IMG.mlx_ptr == %p\n", img.mlx);
-	printf("IMG.win_ptr == %p\n", img.win);
-	printf("IMG.name == %s\n", img.name);
-	printf("IMG.color == %d\n", img.color);
-	printf("IMG.px == %d\n", img.px);
-	printf("IMG.py == %d\n", img.py);
-	printf("IMG.scale_x == %f\n", img.scale_x);
-	printf("IMG.scale_y == %f\n", img.scale_y);
-	printf("IMG.zoom == %f\n", img.zoom);
-	printf("IMG.arg X == %f\n", img.argument_cx);
-	printf("IMG.arg Y == %f\n", img.argument_cy);
-}
+// void	ft_display_data(t_data img)
+// {
+// 	printf("IMG.img == %p\n", img.img);
+// 	printf("IMG.bpp == %d\n", img.bpp);
+// 	printf("IMG.sl == %d\n", img.sl);
+// 	printf("IMG.endian == %d\n", img.endian);
+// 	printf("IMG.mlx_ptr == %p\n", img.mlx);
+// 	printf("IMG.win_ptr == %p\n", img.win);
+// 	printf("IMG.name == %s\n", img.name);
+// 	printf("IMG.color == %d\n", img.color);
+// 	printf("IMG.px == %d\n", img.px);
+// 	printf("IMG.py == %d\n", img.py);
+// 	printf("IMG.scale_x == %f\n", img.scale_x);
+// 	printf("IMG.scale_y == %f\n", img.scale_y);
+// 	printf("IMG.zoom == %f\n", img.zoom);
+// 	printf("IMG.arg X == %f\n", img.argument_cx);
+// 	printf("IMG.arg Y == %f\n", img.argument_cy);
+// }
 
 void	ft_get_init_fract(t_data *img, char **name)
 {
@@ -56,7 +56,7 @@ void	ft_get_init_fract(t_data *img, char **name)
 	}
 	else
 	{
-		printf("wrong input");
+		ft_printf("Wrong input\n fractal: mandelbrot, julia, burning\n");
 		ft_close_mlx_data(img);
 	}
 }
