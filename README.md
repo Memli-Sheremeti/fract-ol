@@ -38,7 +38,7 @@ Fractol is a program designed for the exploration and visualization of fascinati
 	make -s
 
 ### Usage
-	```bash
+	
 	./libix [fractal_type] [options...]
  
 Replace [fractal_type] with the type of fractal you want to display.
